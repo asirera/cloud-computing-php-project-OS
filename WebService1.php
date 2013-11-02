@@ -1,3 +1,4 @@
+<div id="tabWebService1" style="padding:5px; margin:0px; height:100%;">		
 
 <h2>WebService1</h2>
 <h4>Detailed Description</h4>
@@ -32,4 +33,4 @@ Country node explaining the error message.</p>
 echo $_SERVER['REMOTE_ADDR'];
 ?></p>
     
-    
+</div>
