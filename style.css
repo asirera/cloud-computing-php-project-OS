@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+A:link {text-decoration:none; color: #33C; border:none; }
+A:visited {text-decoration:none; color: #33C;border:none;}
+A:active {text-decoration: none;border:none;}
+A:hover {text-decoration: none; color: #FFF; font-weight:bold;border:none;}
+
+body{
+	
+	color:#FFF;
+	}
+img {
+ border:none;
+ }
+.left2 {
+	position: relative;
+	z-index:333;
+	margin-top:0px;
+	left: 1%;
+	top: 60%;
+}
+
+.left {
+	position:absolute;
+	z-index:0;
+	margin-top:0px;
+	left: 1%;
+	top: 20%;
+}
+
+.right {
+	position:absolute;
+	z-index:0;
+	margin-top:0px;
+	right:1%;
+	top: 10%;
+	
+}
+
+.e {text-decoration:none; color: #0F0;
+	position:absolute;
+	z-index:0;
+	margin-top:0px;
+	left: 10px;
+	top: 450px;
+}
+
+.control {
+	position:absolute;
+	z-index:0;
+	margin-top:0px;
+	left: 123px;
+	top: 37px;
+}
+
+/* hiddenMenu */
+#info {padding-bottom:0px;}
+.menu {
+	position:absolute;
+	z-index:0;
+	margin-top:0px;
+	left: 1px;
+	top: 1px;
+}
+.menu ul {
+padding:0; margin:0; list-style-type: none; height:70px;
+}
+.menu ul li {width:35px; text-align:center; }
+* html .menu ul li {width:30px; margin-left:-16px; mar\gin-left:0;}
+.menu ul li a, .menu ul li a:visited {display:block; text-decoration:none; width:5px; padding:3px;  top right; height:80px; text-align:center;}
+* html .menu ul li a, * html .menu ul li a:visited {width:35px; height:100px; w\idth:15px; he\ight:80px;}
+table { padding:0; border:0; border-collapse:collapse;font-size:12px;color:#FFFFFF; text-decoration: none; font-family: Comic Sans MS}
+.menu ul li ul {visibility:hidden; position:absolute; width:190px; top:0; left:0;}
+.menu ul li:hover {position:relative;}
+.menu ul li:hover a {padding-left:60px;}
+.menu ul li a:hover {padding-left:61px; position:relative; z-index:200; border-left:0;}
+.menu ul li:hover ul,
+.menu ul li a:hover ul {visibility:visible; z-index:300;}
+.menu ul li:hover ul li a,
+.menu ul li a:hover ul li a {display:block;  color:#888; text-align:center; height:auto; padding:0px; border:0px; border-width:0px 0px 0 0px; width:55px; w\idth:50px;}
+.menu ul li:hover ul li a.last,
+.menu ul li a:hover ul li a.last {border-bottom:0px;}
+.menu ul li:hover ul li a:hover,
+.menu ul li a:hover ul li a:hover {background:#e8f2f2; color:#000;}
+.some_text {padding:0 20px 0 50px;}
+
+/* dock */
+
+.dock {
+	position: relative; 
+	height: 50px; 
+	text-align: center;
+}
+.dock-container {
+	position: absolute;
+	height: 50px;
+	padding-left: 20px;
+}
+a.dock-item {
+	display: block;
+	width: 40px;
+	position: absolute;
+	top: 0px;
+}
+.dock-item img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%;
+}
+.dock-item span {
+	display: none; 
+	padding-left: 20px;
+}
+
+/*Accordion*/
+
+.AccordionTitle, .AccordionContent, .AccordionContainer
+{
+ 
+  width:100px;
+  
+}
+
+.AccordionTitle
+{
+  height:20px;
+  overflow:hidden;
+  cursor:pointer;
+  font-family: "Comic Sans MS", cursive;
+  font-size:8pt;
+  color:#FFF;
+  font-weight:bold;
+  vertical-align:middle;
+  text-align:center;
+  background-repeat:repeat-x;
+  display:table-cell;
+  background-image:url('images/2.png');
+  -moz-user-select:none;
+  
+}
+
+.AccordionTitle:hover {
+
+background-image:url('images/2.png');
+ color:silver;
+	}
+
+.AccordionContent
+{
+  height:0px;
+  overflow:auto;
+  display:none;
+  background-image:url('images/5.png');
+}
+
+.AccordionContainer
+{
+  
+ 
+}
+/*border-top: solid 1px  silver;
+  border-bottom: solid 1px silver;
+  border-left: solid 2px silver;
+  border-right: solid 2px silver;*/
