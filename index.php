@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="author" content="Lawrence Schmid">
+<!--	<meta name="author" content="Lawrence Schmid">-->
 	<title>Cloud Computing PHP Project</title>
 	<link href="css/redmond/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="css/flexigrid.css" />
@@ -42,30 +42,30 @@
 </head>
 
 <body>
-<!-- Tabs --><h1>Cloud Computing PHP Project</h1>
+<!-- Tabs --><h1>Cloud Computing PHP Project</h1>PaaS Heroku
 <div id="tabs" style="padding-left:5px; padding-right:5px">
 	
 	<ul>
 		<li><a href="#tabAlbums">Albums</a></li>
 		<li><a href="#tabParticipants">Participants</a></li>
-		<li><a href="#tabTracks">Tracks</a></li>
-		<li><a href="#tabWorks">Works</a></li>
+		<li><a href="#tabTracks">WebService1</a></li>
+		<li><a href="#tabWorks">WebService2</a></li>
 	</ul>
 	
 	<?php
-		require($DOCUMENT_ROOT . "albums-tab.html"); // Include the albums-tab layout
+		require( "albums-tab.html"); // Include the albums-tab layout
 	?>	
 
 	<?php
-		require($DOCUMENT_ROOT . "participants-tab.html"); // Include the participants-tab layout
+		require( "participants-tab.html"); // Include the participants-tab layout
 	?>		
 	
 	<?php
-		require($DOCUMENT_ROOT . "tracks-tab.html"); // Include the tracks-tab layout
+		require(  "WebService1.php"); // Include the tracks-tab layout
 	?>	
 	
 	<?php
-		require($DOCUMENT_ROOT . "works-tab.html"); // Include the works-tab layout
+		require( "WebService2.html"); // Include the works-tab layout
 	?>	
 	
 </div>

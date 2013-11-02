@@ -1,76 +1,200 @@
 
-	<!-- Albums tab -->
-	<div id="tabAlbums" style="padding:5px; margin:0px; height:100%;">		
+<!-- Albums tab -->
+<div id="tabAlbums" style="padding:5px; margin:0px; height:100%;">		
+    <h2> Cloud Computing Project</h2>
+    <br>
+    <p>  The Cloud Computing module
+project
+requires
+you
+to
+build
+a
+web
+application
+and
+have
+it
+hosted
+on
+at
+least
+two
+cloud
+providers.</p>
+    
+The
+project
+is
+worth
+40%
+of
+your
+module.
+Requirements
 
-		<!-- Search parameters -->
-		<div class="header">Search Parameters</div>
-				
-		<!-- Search album title -->
-		<div class="searchField">
-			<label for="searchAlbumTitle">Album Title</label>
-			<input id="searchAlbumTitle" />
-		</div>
-		
-		<!-- Search genre -->
-		<div class="searchField">
-			<label for="searchAlbumGenre">Genre</label>
-			<input id="searchAlbumGenre"/>
-		</div>	
-		
-		<!-- Search label -->
-		<div class="searchField" style="clear:left">
-			<label for="searchAlbumLabel">Label</label>
-			<input id="searchAlbumLabel"/>
-		</div>
-		
-		<!-- Search barcode -->
-		<div class="searchField">
-			<label for="searchAlbumBarcode">Barcode</label>
-			<input id="searchAlbumBarcode"/>
-		</div>
-		
-		<!-- Search artist name -->
-		<div class="searchField" style="clear:left">
-			<label for="searchAlbumArtistName">Artist Name</label>
-			<input id="searchAlbumArtistName"/>
-		</div>
-		
-		<!-- Search region -->
-		<div class="searchField">
-			<label for="searchAlbumRegion">Region</label>
-			<input id="searchAlbumRegion"/>
-		</div>		
-		
-		<!-- Search button -->
-		<div class="searchField">
-			<button id="albumSearchButton">Search</button>
-		</div>						
+    • Web
+    Application
+    must
+    be
+    developed
+    using
+    PHP.
+    • Application
+    should
+    consume
+    at
+    least
+    two
+    services,
+    getting
+    some
+    information
+    and
+    do
+    something
+    useful
+    with
+    the
+    information
+    retrieved.
+    • Application
+    should
+    be
+    deployed
+    on
+    two
+    cloud
+    platforms,
+    if
+    you
+    require
+    access
+    to
+    Amazon,
+    contact
+    Rob
+    Duncan
+    at
+    rduncan@ncirl.ie
+    for
+    an
+    access
+    key.
+    Marking
+    Scheme
+    40%
+    of
+    the
+    marks
+    awarded
+    for
+    the
+    successful
+    deployment
+    of
+    your
+    application
+    on
+    two
+    different
+    cloud
+    platforms.
+    50%
+    of
+    the
+    marks
+    awarded
+    for
+    the
+    application
+    developed
+    in
+    PHP.
+    10%
+    of
+    the
+    marks
+    awarded
+    for
+    a
+    technical
+    document
+    (Template
+    will
+    be
+    provided
+    on
+    Moodle).
+    <!-- Search parameters -->
+    <div class="header">Search Parameters</div>
 
-		<!-- Results -->
-		<div class="header">Results</div>
+    <!-- Search album title -->
+    <div class="searchField">
+        <label for="searchAlbumTitle">Album Title</label>
+        <input id="searchAlbumTitle" />
+    </div>
 
-		<!-- Results table -->
-		<div class="resultsTable"> 
-			<table class="albumResults" style="display: none"></table>	
-		</div>
+    <!-- Search genre -->
+    <div class="searchField">
+        <label for="searchAlbumGenre">Genre</label>
+        <input id="searchAlbumGenre"/>
+    </div>	
 
-		<!-- Album information -->	
-		<div class="wrapper" id="tabAlbumsAlbumInformation">
-			<?php
-				require($DOCUMENT_ROOT . "album-info.html"); // Include the album-info layout
-			?>
-			<!-- Track listing -->
-			<div class="rightSide" style="max-width:300px;">	
-				<div class="header">Track Listing</div>
-				<table class="tabAlbumsTrackList" style="display: none"></table>					
-			</div> 		
-		
-		</div>
-		
-		<!-- Footer -->
-		<div id="tabAlbumsFooter" class="footer">
-			<img id="statusProgress" src="css/images/load.gif" visible="false"/><div id="statusText"></div>
-		</div> 		
-		<script>setStatus("tabAlbumsFooter", "Ready", false)</script>
+    <!-- Search label -->
+    <div class="searchField" style="clear:left">
+        <label for="searchAlbumLabel">Label</label>
+        <input id="searchAlbumLabel"/>
+    </div>
 
-	</div>
+    <!-- Search barcode -->
+    <div class="searchField">
+        <label for="searchAlbumBarcode">Barcode</label>
+        <input id="searchAlbumBarcode"/>
+    </div>
+
+    <!-- Search artist name -->
+    <div class="searchField" style="clear:left">
+        <label for="searchAlbumArtistName">Artist Name</label>
+        <input id="searchAlbumArtistName"/>
+    </div>
+
+    <!-- Search region -->
+    <div class="searchField">
+        <label for="searchAlbumRegion">Region</label>
+        <input id="searchAlbumRegion"/>
+    </div>		
+
+    <!-- Search button -->
+    <div class="searchField">
+        <button id="albumSearchButton">Search</button>
+    </div>						
+
+    <!-- Results -->
+    <div class="header">Results</div>
+
+    <!-- Results table -->
+    <div class="resultsTable"> 
+        <table class="albumResults" style="display: none"></table>	
+    </div>
+
+    <!-- Album information -->	
+    <div class="wrapper" id="tabAlbumsAlbumInformation">
+        <?php
+        require($DOCUMENT_ROOT . "album-info.html"); // Include the album-info layout
+        ?>
+        <!-- Track listing -->
+        <div class="rightSide" style="max-width:300px;">	
+            <div class="header">Track Listing</div>
+            <table class="tabAlbumsTrackList" style="display: none"></table>					
+        </div> 		
+
+    </div>
+
+    <!-- Footer -->
+    <div id="tabAlbumsFooter" class="footer">
+        <img id="statusProgress" src="css/images/load.gif" visible="false"/><div id="statusText"></div>
+    </div> 		
+    <script>setStatus("tabAlbumsFooter", "Ready", false)</script>
+
+</div>

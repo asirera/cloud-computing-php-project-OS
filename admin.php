@@ -5,5 +5,5 @@
 $applicationID = 'Your Application ID';
 $applicationKey = 'Your Application Key';
 $apiAddress = 'http://decibel-soap-jazz.cloudapp.net/DecibelService.svc?wsdl';
-$host = 'Your Host Address e.g. www.decibel.net';
+$host = 'http://cloud-computing-php-project.herokuapp.com/';
 ?>
