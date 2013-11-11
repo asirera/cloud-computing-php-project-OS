@@ -39,7 +39,7 @@
 
 <body>
 <!-- Tabs --><h1>Cloud Computing PHP Project</h1>
-Deployed in PaaS Heroku.
+Deployed in PaaS Heroku!!
 <div id="tabs" style="padding-left:5px; padding-right:5px">
 	<ul>
 		<li><a href="#tabHome">Home</a></li>
